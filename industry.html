@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+
+<!--This is where the head starts-->
+<head>
+    <meta charset="utf-8"/>
+    <title>SGD | Smart Global Drones</title><!--Sets title for page and dsiplays in tab-->
+    <link rel="shortcut icon" href=""/><!--insert logo filname in href-->
+    <link rel="stylesheet" href="industry.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+        
+</head>
+
+<!--This is where the body starts-->
+
+    <body style="background-color: rgb(235, 235, 235);">
+        <section class="header" id="MenuBar"><!--creates menu bar section-->
+            <div class="container"><!--creates container for menu bar which adjusts with screen width-->
+                <nav class="navbar navbar-expand-lg bg-#333 fixed-top"><!--creates a navbar with desired backgound colour, transformation when screen is too small and fixes it to the top regardless of the user scrolling-->
+                    <div class="navbar-header container-fluid mx-auto">
+                        <a class="navbar-brand" href="index.html">
+                            <img class="img-fluid"src="img/sgdlogo.png"/>
+                        </a><!--creates a link using the company logo-->
+                        <div class="dropdown" id="nav-drop">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="dropdown" data-bs-target="#nav-dropdown">
+                            <i class="fa fa-bars fa-2x" aria-hidden="true" style="color: white;"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" id="nav-drop" style="text-align: end;">
+                            <li class="nav-item"><a class="dropdown-item nav-link" href="index.html">HOME</a></li>
+                            <li class="nav-item active"><a class="dropdown-item nav-link" href="industry.html">INDUSTRIES</a></li>
+                            <li class="nav-item"><a class="dropdown-item nav-link" href="legality.html">LEGALITY</a></li>
+                            <li class="nav-item"><a class="dropdown-item nav-link" href="about.html">ABOUT</a></li>
+                            <li class="nav-item"><a class="dropdown-item nav-link" href="vision.html">VISION</a></li>
+                            <li class="nav-item"><a class="dropdown-item nav-link" href="contact-us.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse mx-4" id="main_nav">
+                    <ul class="navbar-nav ms-auto"><!--a list to house all the menu links-->
+                        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li><!--generates home link-->
+                        <li class="nav-item active"><a class="nav-link" href="industry.html">INDUSTRIES</a></li><!--generates home link-->
+                        <li class="nav-item"><a class="nav-link" href="legality.html">LEGALITY</a></li><!--generates legality link-->
+                        <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li><!--generates about link-->
+                        <li class="nav-item"><a class="nav-link" href="vision.html">VISION</a></li><!--generates about link-->
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html">CONTACT</a></li><!--generates contact us link link-->
+                    </ul>
+                </div>
+                </nav>
+            </div>    
+        </section>   
+
+                <!--Top nav ends here-->
+
+<!--Background Image at the top of the page-->
+<div class="main-content">
+<section>
+    <!-- Jumbotron -->
+    <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white" style="background-image: url('img/banner.jpeg'); height: 300px">
+        <div class="industry-page-h1">
+            <h1 class="mb-3 h2">Drones in Other Industries</h1>
+        </div>
+    </div>
+    <!-- Jumbotron -->
+    </section>
+
+<!--Pill Nav Tab Pane View Setup-->
+
+    
+    <div class="text-center row rounded-3 d-flex justify-content-center align-items-center col-12">
+            <ul class="nav nav-pills  nav-fill w-50 mb-3 justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-Agriculure-tab" data-bs-toggle="pill" data-bs-target="#Agriculture" type="button" role="tab" aria-selected="true">Agriculture</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-Construction-tab" data-bs-toggle="pill" data-bs-target="#Construction" type="button" role="tab" aria-selected="false">Construction</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-Media-tab" data-bs-toggle="pill" data-bs-target="#Media" type="button" role="tab" aria-selected="false">Media</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-Medical-tab" data-bs-toggle="pill" data-bs-target="#Medical" type="button" role="tab" aria-selected="false">Medical</button>
+                  </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-Military-tab" data-bs-toggle="pill" data-bs-target="#Military" type="button" role="tab" aria-selected="false">Military</button>
+                </li>
+            </ul>
+
+    <!-- Content of the Tabs -->
+       <div class="tab-content" id="myTabContent">
+           <!-- Agriculture Tab -->
+            <div class="tab-pane fade show active" id="Agriculture" role="tabpanel" aria-labelledby="Agriculture-tab">
+                <div class="col-12 container-fluid align-items-center justify-content-center my-4">
+                <section>
+
+                    <div class="intro-title-h2">
+                        <h2><strong>Introduction</strong></h2>
+                    </div>
+    
+        <div class="container-fluid d-lg-flex align-items-lg-start my-3">
+            <div class="col-lg-11 mx-auto mb-3">
+                <div class="intro-paragraph fs-1">
+                    <p style="text-align: justify;">
+                        Business insider (2021) has stated that the population of the world will reach 9.7Bn by 2050. This will cause a significant strain on the agricultural industry with consumption set to rise by 69% between 2010 and 2050. The use of drones in agriculture will allow for the improvement is areas such as livestock management, irrigation management as well as fertilisation. Fertilisation deployed with drones is estimated to be between 40-60 times faster.
+                    </p>
+                </div>
+            </div>
+                <div class="paragraph_for_intro">
+                    
+                </div>
+            </div>
+    </section>
+    
+    <div class="container-fluid d-lg-flex align-items-lg-start my-3">
+        <div class="center col-lg-5 col-sm-12 mx-auto mb-3;">
+            <img class="img-fluid" src="img/Planting-Picture.jpg" alt="image" width="525" height="260">
+            <div class="industry-paragraph-1">
+                <p>
+                Planting: although not fully developed, there is the possibility of using drones to eject seeds and plant nutrients into soil ready for growth. This has the ability to reduce planting costs through the increase of planting speed, as well as replacing the use of more expensive equipment and machinery that is currently used for planting. This may not only reduce the cost of running, but also maintainging the machinery required as drones do not require the same amount or cost for maintainance.
+                </p>
+            </div>
+        </div>
+        <div class="center col-lg-5 col-sm-12 mx-auto mb-3">
+            <img class="img-fluid" src="img/Crop-Maintainance.jpg" alt="image" width="525" height="260">
+            <div class="industry-paragraph-2">
+                <p>
+                Monitoring: Current drawbacks are the monitoring of large areas of crops. With a rise in weather unpredictability drones can produce time series animations to better understand crop development over the entire area, allowing for farmers to better identify inefficiencies and areas of issues, improving crop management. They can find areas where further care is required allowing to not only imrpove maintainance but increase crop yield, allowing for farmers to make a better profit margin for each crop planted grown and collected.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid d-lg-flex align-items-lg-start my-3">
+        <div class="center col-lg-5 mx-auto mb-3">
+            <img class="img-fluid" src="img/Crop-Spraying.jpg" alt="image" width="525" height="260">
+            <div class="industry-paragraph-3">
+                <p style="text-align: justify;">
+                    Spraying: Drones can easily adjust to terrain changes. With their ability to regulate a number of variables such as height from the ground they will be able to spray any liquid required more evenly while simultaneously being faster (40-60 times faster) than the conventional methods currently used. This will notonly reduce the time taken to spray the crops, but a larger number of crops can be covered allowing for reduced costs and possibly improved yield for farmers utilising drones.
+                </p>
+            </div>
+        </div>
+        <div class="center col-lg-5 mx-auto mb-3">
+            <img class="img-fluid" src="img/Crop-Thermal.jpg" alt="image" width="525" height="260">
+            <div class="industry-paragraph-4">
+                <p style="text-align: justify;">
+                    Irrigation: Drones have the possibility of using thermal imaging sensors, which are able to identify dry areas in crop fields. This allows for the modification and improvement of the farming and irrigation systems to allow a more efficient irrigation to be carried out over the largerst area possible. The use of this system, similarly to the use of other technologies allows the optimisation of crop growth, allowing for the invcrease in yield for the crops planted.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid d-lg-flex align-items-lg-start my-3">
+            <div class="center col-lg-5 mx-auto mb-3">
+                <img src="img/Crop-Health.jpg" alt="image" width="525" height="260">
+                <div class="industry-paragraph-5">
+                    <p>
+                        Health Assessment: Drones will have the ability to determine plant health with the use of infra-red imaging. This will help to ensure that the crop remains healthy and if any crop develops a disease or becomes compromised, the issue can be quickly identified and dealt with quickly and efficiently. This is allows to keep track of more crops over larger areas allowing to increase the yield produced during the growing season.
+                    </p>
+                </div>
+            </div>
+        </div>    
+    <br>
+                </div>
+            </div>
+
+            <!-- Construction Tab -->
+            <div class="tab-pane fade" id="Construction" role="tabpanel" aria-labelledby="Construction-tab">
+                <div class="col-12 container-fluid align-items-center justify-content-center my-4">
+                <section>
+                    <div class="container-fluid my-auto">
+                        <div class="intro_title">
+                            <div class="col-lg-12">
+                                <div class="intro-title-h2">
+                                    <h2><strong>Introduction</strong></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="container-fluid d-lg-flex align-items-lg-start my-3">
+                        <div class="class col-lg-11 mx-auto mb-3">
+                            <div class="intro-paragraph">
+                                <p style="text-align: justify;">
+                                    Business insider (2021) states that the use of drones in the Construction industry is set to become a $28.3Bn global market according to PwC. A simple application of drones in the industry would be a site inspection, which could take hours or days, being completed in less than 1 hour, which not only reduces the time taken to complete the survey, but identification of issues can be found earlier, possibly preventing any work related injuries or deaths. Drones will also be able to be used in conjunction with 3D imaging hardware, improving the speed at which more accurate models can be produced over a certain area
+                                </p>
+                            </div>
+                        </div>
+                            <div class="paragraph_for_intro">
+                                
+                            </div>
+                        </div>
+                </section>
+                
+                <div class="container-fluid d-lg-flex align-items-lg-start my-3">
+                    <div class="center col-lg-5 mx-auto mb-3;">
+                        <img class="img-fluid" src="img/construction-inspection.jpg" alt="image" width="525" height="260">
+                        <div class="industry-paragraph-1">
+                            <p>
+                                Inspection of construction sites: Regular inspection of construction sites is usually a requirement to ensure the safety of workers throughout the site. Not only can it take a substantial amount of time, but it may require access to highly dangerous areas which would jeopardize the safety of the workforce. Drones will be able to inspect the construction site in a safer and faster manner, reducing the possibility of injuries on site as well as reducing inspection times.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center col-lg-5 mx-auto mb-3">
+                        <img class="img-fluid" src="img/construction-surveying.jpg" alt="image" width="525" height="260">
+                        <div class="industry-paragraph-2">
+                            <p>
+                                Surveying of buildings: In a situation such as roof inspections, drones have a significant advantage, Firstly they eliminate the need to place scaffolding and ladders, which can be costly and unsafe for people to traverse. Secondly it removes the need to access the roof in any way, reducing the risk of work-related injuries significantly thanks to their ability to show a live feed of what the camera is filming. Overall this application significantly reduces costs, safety risks and time required for the inspection to be carried out.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container-fluid d-lg-flex align-items-lg-start my-3">
+                    <div class="center col-lg-5 mx-auto mb-3">
+                        <img class="img-fluid" src="img/construction-mapping.jpg" alt="image" width="525" height="260">
+                        <div class="industry-paragraph-3">
+                            <p style="text-align: justify;">
+                                Mapping of different sites: site maps can be very difficult and labour intensive. Drones are able to easily reach heights and access areas required for the production of site maps without the need to hire helicopters or more expensive equipment. This means that smaller scale firms will now be able to produce these maps without any significant financial drawbacks. The filmed footage can be sent back to a pc in real time, which can then be used to produce the desired map.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center col-lg-5 mx-auto mb-3">
+                        <img class="img-fluid" src="img/construction-3d.jpg" alt="image" width="525" height="260">
+                        <div class="industry-paragraph-4">
+                            <p style="text-align: justify;">
+                                3D model of construction site: Drones have the capability of accurately determining the topography of the site, capture it and be able to transfer it to a 3D modelling software. This allows to more accurately and quickly model the site being constructed on, allowing for time to be more effitiently managed towards other tasks which may run into delays.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid d-lg-flex align-items-lg-start my-3">
+                        <div class="center col-lg-5 mx-auto mb-3">
+                            <img class="img-fluid" src="img/construction-monitoring.jpg" alt="image" width="525" height="260">
+                            <div class="industry-paragraph-5">
+                                <p>
+                                    Progress Monitoring: Many of the latest drone systems allow for real-time monitoring of the site, which allows for increased security, evaluation, with appropriate response and plan for more efficient construction. Weekly progress maps can be made more easily and in a less costly manner than traditional methods, and finally drones allow for easier transfer of data and information thanks to the quality of the information which drones are able to supply.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="center col-lg-5 mx-auto mb-3">
+                            <img class="img-fluid" src="img/construction-transportation.jpg" alt="image" width="525" height="260">
+                            <div class="industry-paragraph-5">
+                                <p>
+                                    Transportation of Equipment: The primary cause of fatalities on construction sites are by being struck from moving vehicles. For this reason, the transportation of certain equipment may not only make the transportation of certain things faster, but also safer. Urgent notices material and equipment can be quickly delivered thanks to their small and highly maneuverable nature.
+                                </p>
+                            </div>
+                        </div>
+                    </div>    
+                
+                
+                <br>
+                </div>
+            </div>
+            
+            <!-- Media Tab -->
+            <div class="tab-pane fade" id="Media" role="tabpanel" aria-labelledby="Media-tab">
+                <div class="col-12 container-fluid align-items-center justify-content-center my-4">
+                    <section>
+
+                        <div class="intro-title-h2">
+                            <h2><strong>Introduction</strong></h2>
+                        </div>
+        
+            <div class="container-fluid d-lg-flex align-items-lg-start my-3">
+                <div class="col-lg-11 mx-auto mb-3">
+                    <div class="intro-paragraph fs-1">
+                        <p style="text-align: justify;">
+                            Up until recently, the media industry and amateur/professional photographers have had to use expensive and time consuming equipment to capture certain shots such as aerial shots with the use of helicopters, costing upwards of $20000 and placing multiple personnel at risk. Not only are the personnel at risk, but the extremely expensive camera equipment that would be used as well. Drones can help with the mitigation of these issues. Drones have the possibility to assist and inspire both amateur and professional film makers to produce previously unthinkable shots.
+                        </p>
+                    </div>
+                </div>
+                    <div class="paragraph_for_intro">
+                        
+                    </div>
+                </div>
+        </section>
+        
+        <div class="container-fluid d-lg-flex align-items-lg-start my-3">
+            <div class="center col-lg-5 col-sm-12 mx-auto mb-3;">
+                <img class="img-fluid" src="img/Aerial-Drone-Shot.jpg" alt="image" width="525" height="260">
+                <div class="industry-paragraph-1">
+                    <p>
+                        Drones can safely film from a variety of angles, varying from aerial shots, shots from hard-to-reach places within our outside buildings, or shots which require different manoeuvres which would be impossible to produce without the use of drones.
+                    </p>
+                </div>
+            </div>
+            <div class="center col-lg-5 col-sm-12 mx-auto mb-3">
+                <img class="img-fluid" src="img/Drone-Sunset.jpg" alt="image" width="525" height="260">
+                <div class="industry-paragraph-2">
+                    <p>
+                        Drones have the possibility to save the cost of hiring a helicopter and large crew, saving upwards of $20000. The use of drones does not only reduce the cost of aerial shots, but it also ensures that if any issues arise to the equipment, they do not cause any major or fatal injuries to the crew, a benefit that is immeasurable.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid d-lg-flex align-items-lg-start my-3">
+            <div class="center col-lg-5 mx-auto mb-3">
+                <img class="img-fluid" src="img/Drone2.jpg" alt="image" width="525" height="260">
+                <div class="industry-paragraph-3">
+                    <p style="text-align: justify;">
+                        In comparison to conventional filming equipment, drones are more affordable as a solution and provide more benefits, making it a great investment for both professional and amateur film makers. This can help the industry revolutionise itself through the drastic increase in high quality film and photos that can be collected by a wider range of users.
+                    </p>
+                </div>
+            </div>
+            <div class="center col-lg-5 mx-auto mb-3">
+                <img class="img-fluid" src="img/dronecost.svg" alt="image" width="525" height="260">
+                <div class="industry-paragraph-4">
+                    <p style="text-align: justify;">
+                        Drones are lightweight and users can learn how to operate them very quickly, they can also very easily be incorporated in the logistics of a film’s production, allowing for more efficient scene planning and a reduction of camera needs thanks to the way drones can be utilised. This has the potential to reduce film production costs as well as improving the overall quality of the final product.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+                </div>
+            </div>
+
+            <!-- Medical Tab -->
+            <div class="tab-pane fade" id="Medical" role="tabpanel" aria-labelledby="Medical-tab">
+                <div class="col-12 container-fluid align-items-center justify-content-center my-4">
+                    <section>
+
+                        <div class="intro-title-h2">
+                            <h2><strong>Introduction</strong></h2>
+                        </div>
+        
+            <div class="container-fluid d-lg-flex align-items-lg-start my-3">
+                <div class="col-lg-11 mx-auto mb-3">
+                    <div class="intro-paragraph fs-1">
+                        <p style="text-align: justify;">
+                            Drone use in medical industry for healthcare purpose is a very convenient solution to many problems. Lack of access to immediate healthcare in rural regions and lack of timely blood supply deliveries in emergency situations are few of these problems. The utilisation of drones in these scenarios will be a much more efficient method in which we tackle these issues. Covid-19 has acted as a catalyst for drone use in the medical industry, this is a result of the social distancing and quarantine measures in place. It has made remotely operated systems more valuable.
+                        </p>
+                    </div>
+                </div>
+                    <div class="paragraph_for_intro">
+                        
+                    </div>
+                </div>
+        </section>
+        
+        <div class="container-fluid d-lg-flex align-items-lg-start my-3">
+            <div class="center col-lg-5 col-sm-12 mx-auto mb-3;">
+                <img class="img-fluid" src="img/medicdrone.jpg" alt="image" width="525" height="260">
+                <div class="industry-paragraph-1">
+                    <p>
+                        Drones have the potential to increase access to life-saving drugs and vaccines, as well as the speed with which they are given. In developing countries with inadequate access to health care, drones can drastically speed up vaccination distribution. Those who live in rural places or who would otherwise be unable to obtain the vaccine will be able to do so as the logistical hurdles of physically distributing vaccines to rural locations can be overcome via drones. 
+                    </p>
+                </div>
+            </div>
+            <div class="center col-lg-5 col-sm-12 mx-auto mb-3">
+                <img class="img-fluid" src="img/Flood.jpg" alt="image" width="525" height="260">
+                <div class="industry-paragraph-2">
+                    <p>
+                        Medical treatment in the aftermath of a natural disaster is the most difficult to deal with. When communication is disrupted, a large population demands rapid medical assistance in order to survive. Drones for medical purposes will be particularly useful in delivering small aid packages to disaster victims.  
+           
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid d-lg-flex align-items-lg-start my-3">
+            <div class="center col-lg-5 mx-auto mb-3">
+                <img class="img-fluid" src="img/Emergency.jpg" alt="image" width="525" height="260">
+                <div class="industry-paragraph-3">
+                    <p style="text-align: justify;">
+                        Diagnostics is one of the most common applications for drones. Because some diagnostic procedures are time and temperature sensitive, a sample from a patient must be submitted to the lab and the test must be completed within a certain timeframe, which might be as little as 2 hours.
+                    </p>
+                </div>
+            </div>
+            <div class="center col-lg-5 mx-auto mb-3">
+                <img class="img-fluid" src="img/Medical-Delivery.jpg" alt="image" width="525" height="260">
+                <div class="industry-paragraph-4">
+                    <p style="text-align: justify;">
+                        Organ transfer: The necessity for ultra-fast transportation, such as a private jet charter or a helicopter, is critical due to the short time window for moving organs from donor to patient, which can range from 4 to 36 hours depending on the organ type. Organ delivery can be made faster, safer, and more cost-effective with the use of drones.
+                    </p>
+                </div>
+            </div>
+        </div>
+                </div>
+            </div>
+
+            <!-- Military Tab -->
+            <div class="tab-pane fade" id="Military" role="tabpanel" aria-labelledby="Military-tab">
+                <div class="col-12 container-fluid align-items-center justify-content-center my-4">
+                    <section>
+                        <div class="container-fluid my-auto">
+                            <div class="intro_title">
+                                <div class="col-lg-12">
+                                    <div class="intro-title-h2">
+                                        <h2><strong>Introduction</strong></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="container-fluid d-lg-flex align-items-lg-start my-3">
+                            <div class="center col-lg-11 mx-auto mb-3">
+                                <div class="intro-paragraph">
+                                    <p style="text-align: justify;">
+                                        Drone use in military applications has brought forward a number of benefits which allow for the simplification of military operations alongside the protection of military personnel in highly dangerous operations, both covert and not. They are able to provide different vantage points for reconnaissance, logistical advantages or even be used in combat situations. Drones overal have provided significant advantages, but they have also been criticised for a number of reasons due to issues such as collateral damage caused from their usage. Over the years a number of benefits and shortcomings have been identified, which will be explored in the following sections.
+                                    </p>
+                                </div>
+                            </div>
+                                <div class="paragraph_for_intro">
+                                    
+                                </div>
+                            </div>
+                    </section>
+                    
+                    <div class="container-fluid d-lg-flex align-items-lg-start my-3">
+                        <div class="center col-lg-5 mx-auto mb-3;">
+                            <img class="img-fluid" src="img/Military-Cost.png" alt="image" width="525" height="260">
+                            <div class="industry-paragraph-1">
+                                <p>
+                                    Cheaper to Produce and Maintain: Drones can be used instead of planes, drones in comparison to planes have both a lower production and maintenance cost, as well as removing the user from the vehicle improving overall usage safety. This can significantly reduce costs in the production, maintenance and training for usage of the vehicles, and planes can be deployed when it is deemed absolutely necessary.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="center col-lg-5 mx-auto mb-3">
+                            <img class="img-fluid" src="img/Military-Lives.jpg" alt="image" width="525" height="260">
+                            <div class="industry-paragraph-2">
+                                <p>
+                                    Fewer lives at risk: US military drones have the ability to remove personnel from highly dangerous situations such as high risk tactical missions through the decreased personnel deployment overseas. Drones are able to access and reach hard to reach places to gain intel and carry out missions without any personnel being in direct danger, with the only real issue being the destruction of drones, which are replaceable.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="container-fluid d-lg-flex align-items-lg-start my-3">
+                        <div class="center col-lg-5 mx-auto mb-3">
+                            <img class="img-fluid" src="img/Military-Pressure.jpg" alt="image" width="525" height="260">
+                            <div class="industry-paragraph-3">
+                                <p style="text-align: justify;">
+                                    Exercising pressure on terrorist organisations: drones have the ability to constantly survey and gain data and information on enemy operations at all times. Things such as training methods, enemy bases and movements can be consistently tracked to allow for the production of operations that are able to effectively hinder their operations. These operations not only become more effective at combating these issues, but the improved knowledge is able to better position personnel, bases and equipment to ensure maximal safety.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="center col-lg-5 mx-auto mb-3">
+                            <img class="img-fluid" src="img/Military-Weapon.jpg" alt="image" width="525" height="260">
+                            <div class="industry-paragraph-4">
+                                <p style="text-align: justify;">
+                                    Efficient at eliminating “High Value Targets”: Drones have the ability to be extremely agile and adaptable to a variety of environments, allowing for them to be used in situations where extremist leaders can be efficiently eliminated without placing any personnel in any significantly dangerous and compromised positions. Not only will the personnel be at less risk, but the collateral damage which may occur from a larger scale operation can be completely avoided.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid d-lg-flex align-items-lg-start my-3">
+                            <div class="center col-lg-5 mx-auto mb-3">
+                                <img class="img-fluid" src="img/Military-Technology.jpg" alt="image" width="525" height="260">
+                                <div class="industry-paragraph-5">
+                                    <p>
+                                        Flexibility and technological progress: The fact that drones are able to consistently gather intel in real time, allows for a flexible approach towards operations and response to attacks that may occur undetected if drones were not used. The technological advancements that have and can be made can bring more advantages and flexibilities to a broader variety of operations which can then also be brought to the commercial market.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="center col-lg-5 mx-auto mb-3">
+                                <img class="img-fluid" src="img/Military-Operation.jpg" alt="image" width="525" height="260">
+                                <div class="industry-paragraph-5">
+                                    <p>
+                                        Operational hours and Accuracy: Drones have the ability to maintain operation without developing any fatigue. The control of drones can be handed off to personnel always ensuring that operations are carried out to their maximal potential and reducing human errors to the minimum they can be. Their ability to be significantly more accurate than human personnel also means that intel and lethal strikes are carried out in a manner which reduces error and therefore any possible collateral damage.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+</body>
+<footer>
+    <!-- Section: Footer  -->
+    <section class="my-auto" id="main_footer">
+        <div class="container text-center text-md-start my-auto">
+        <!-- Grid row -->
+            <div class="row mt-auto mb-4">
+            <!-- Grid column -->
+                <div class="col-md-5 col-lg-4 col-xl-3 mx-auto mb-md-0 my-4">
+                <!-- Content -->
+                <img class="img-fluid"src="img/sgdlogo.png" id="footer_logo"/>
+                <p>
+                    <br>
+                    SGD is a global company, with offices in New York, San Francisco, London, Istanbul and Bangkok.
+                    <br>
+                    <br>
+                    Our North American presence is in New York and San Francisco.
+                    <br>
+                    <br>
+                    Our Middle East office is located in Istanbul, Turkey
+                    <br>
+                    <br>
+                    Our APAC presence is in Bangkok, Thailand
+                </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 my-4">
+                <!-- Links -->
+                <!-- <h6 class="text-uppercase fw-bold">Resources</h6> -->
+                <h6 class="text-uppercase fw-bold">Coming Soon</h6>
+                <hr class="mb-4 mt-0 d-inline-block mx-auto"/>
+                <p>
+                    <a href="#!" class="disabled">Smart Cities</a>
+                </p>
+                <p>
+                    <a href="#!" class="disabled">Privacy Policy</a>
+                </p>
+                <p>
+                    <a href="#!" class="disabled">Whitepaper</a>
+                </p>
+                <p>
+                    <a href="#!" class="disabled">Pricing and Products</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 my-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Navigation</h6>
+                <hr class="mb-4 mt-0 d-inline-block mx-auto"/>
+                <p>
+                    <a href="index.html" >Home</a>
+                </p>
+                <p>
+                    <a href="industry.html" class="active">Industries</a>
+                </p>
+                <p>
+                    <a href="legality.html">Legality</a>
+                </p>
+                <p>
+                    <a href="about.html">About Us</a>
+                </p>
+                <p>
+                    <a href="vision.html">Vision</a>
+                </p>
+                <p>
+                    <a href="contact-us" >Contact Us</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-3 col-xl-3 mx-auto mb-md-0 my-4">
+                <!-- <h6 class="text-uppercase fw-bold">Follow Us</h6> -->
+                <h6 class="text-uppercase fw-bold">Coming Soon</h6>
+                <hr class="mb-4 mt-0 d-inline-block mx-auto"/>
+                <table class="mx-auto mx-lg-0">
+                    <tr>
+                    <td><a href="#" class="disabled"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a></td>
+                    <td><a href="#" class="disabled"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a></td>
+                    <td><a href="#" class="disabled"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+                </tr></td>
+                </table>
+            </div>
+            <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+        </div>
+        <!-- Section: Links  -->
+        <!-- Copyright -->
+        <div class="text-center py-2">
+            <p>© 2020 Copyright: SGD Ltd.</p>
+        <!-- Copyright -->
+        </div>
+    </section>
+</footer>

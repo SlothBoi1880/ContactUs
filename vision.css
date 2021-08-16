@@ -1,0 +1,222 @@
+
+@font-face {
+	font-family: Font;
+	src: url(font/OregonLdo-d9q7.ttf);}
+
+@media all{
+	.disabled{
+		color: #fff;
+		opacity: 0.5;
+		pointer-events: none;
+	}
+
+/*------------navbar-------------*/
+
+.navbar  .dropdown-menu{
+    display: none;
+    text-align: end;
+    min-width: 0;
+    width:auto;
+}
+.navbar .nav-item:hover .nav-link{ 
+    text-decoration-line: underline;
+    text-decoration-color: #cc0102;
+    color:#cc0102;
+}
+.navbar #ind-drop:hover .dropdown-menu{
+    display:block;
+    right: 0;
+}
+.navbar #nav-ind-drop:hover .dropdown-menu{
+    display:block;
+    top: 0%;
+    right: 100%;
+}
+.navbar .dropdown-menu .dropdown-item:hover{
+    background-color: #333333;
+    text-decoration-line: underline;
+    text-decoration-color: #cc0102;
+    color: #cc0102;					 
+}
+.navbar .dropdown-menu{ 
+    background-color: #333333;
+    border-color: #333333;
+}
+.navbar .dropdown-menu .dropdown-item{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'font';
+}
+.navbar-nav {
+    display: block;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    background-color: #333333;
+}
+.navbar-nav .nav-item{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    font-family: 'font';
+    font-size: 18px;
+}
+.navbar-nav .nav-link{
+    display: block;
+    color: #fff;
+    text-align: end;
+    padding:0
+}
+.navbar{
+    background-color: #333333;
+}
+.active .nav-link{
+    text-decoration-line: underline;
+    text-decoration-color:#cc0102;
+}
+body .navbar .navbar-toggler{
+    color: #333333;
+    border: none;
+}
+.navbar-brand img{
+    width: 250px;
+    margin-left: 5px;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5)) !important;
+    transform: scale(1.);
+}
+.navbar-brand:hover{
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5)) !important;
+    transform: scale(1.);
+}
+
+/*FOOTER*/
+#main_footer{background-color: #333333;}
+	
+#main_footer h6{font-family: Font;
+	color: #fff;
+	font-size: calc(19px - 0.25vw)
+}
+
+#main_footer hr{
+	width: 60px;
+	min-height: 2px;
+	background-color: #fff;
+}
+
+#footer_logo{max-height: 50px;
+			min-width: 250px;
+			align-self: center;
+			filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.75)) !important;
+		}
+
+#main_footer p a{text-decoration: none;
+		font-family: Font;
+		font-size: calc(18px - 0.25vw);
+		color: #fff;
+		transition: all 0.3s linear;}
+
+#main_footer .active{
+	text-decoration: underline;
+	text-decoration-color: #cc0102;
+	}
+#main_footer a:hover{
+	text-decoration: underline;
+	text-decoration-color: #cc0102;
+			color: #cc0102;
+}
+#main_footer p{
+	font-family: Font;
+	color: #fff;
+	font-size: calc(18px - 0.25vw)
+}	
+
+#main_footer table i{color: #fff;}
+
+#main_footer td{padding-inline-end: 10px;}
+	/*FOOTER*/
+}
+
+
+	/* Header */
+	.heading {
+		font-family: Helvetica, sans-serif;
+		text-align: center;
+		background-image: url(img/Droner-flying.jpg);
+		background-repeat: no-repeat;
+  		background-attachment: fixed;
+  		background-position: top;
+		font-family: font;
+		overflow: hidden;
+	}
+
+	/* Main paragraph */
+   	.about-us {
+		padding-top: 20px;
+        font-size: 35px;
+        text-align: center;
+		background-color: #333333;
+		font-family: font;
+		overflow: hidden;
+		color: #fff;
+		font-size: 30px;
+    }
+	
+
+	/* Creates a column */
+    .column {
+        float: right;
+        padding: 20px;
+    }
+
+    .middle {
+        text-align: center;
+		background-image: url(img/Droner-flying.jpg);
+		background-repeat: no-repeat;
+  		background-attachment: fixed;
+  		background-position: top; 
+    }
+
+	.middle img {
+		width: auto;
+		height: auto;
+		padding-bottom: 25px;
+	}
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+	.video-section {
+		text-align: center;
+		padding-top: 6em;
+		padding-bottom: 3em;
+	} 
+
+	@media (max-width :750px) {
+		.video-section{
+			display: none;
+		}
+	}
+
+
+
+
+
+	.video-section-small {
+		text-align: center;
+		padding-top: 6em;
+		padding-bottom: 3em;
+	} 
+
+	@media (min-width :751px) {
+		.video-section-small{
+			display: none;
+		}
+	}
+
+
+	

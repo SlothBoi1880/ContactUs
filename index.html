@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>SGD | Smart Global Drones</title><!--Sets title for page and dsiplays in tab-->
+        <link rel="shortcut icon" href=""/><!--insert logo filname in href-->
+        <link rel="stylesheet" href="index.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+    </head>
+    <body class="col-12">
+        <section class="header" id="MenuBar"><!--creates menu bar section-->
+            <div class="container"><!--creates container for menu bar which adjusts with screen width-->
+                <nav class="navbar navbar-expand-lg bg-#333 fixed-top"><!--creates a navbar with desired backgound colour, transformation when screen is too small and fixes it to the top regardless of the user scrolling-->
+                    <div class="navbar-header container-fluid mx-auto">
+                        <a class="navbar-brand" href="index.html">
+                            <img class="img-fluid" src="img/sgdlogo.png"/>
+                        </a><!--creates a link using the company logo-->
+                        <div class="dropdown" id="nav-drop">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="dropdown" data-bs-target="#nav-dropdown">
+                            <i class="fa fa-bars fa-2x" aria-hidden="true" style="color: white;"></i>
+                        </button>
+                          <ul class="dropdown-menu dropdown-menu-end" id="nav-drop" style="text-align: end;">
+                                <li class="nav-item active"><a class="dropdown-item nav-link" href="index.html">HOME</a></li>
+                                <li class="nav-item"><a class="dropdown-item nav-link" href="industry.html">INDUSTRIES</a></li>
+                                <li class="nav-item"><a class="dropdown-item nav-link" href="legality.html">LEGALITY</a></li>
+                                <li class="nav-item"><a class="dropdown-item nav-link" href="about.html">ABOUT</a></li>
+                                <li class="nav-item"><a class="dropdown-item nav-link" href="vision.html">VISION</a></li>
+                                <li class="nav-item"><a class="dropdown-item nav-link" href="contact-us.html">CONTACT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse mx-4" id="main_nav">
+                        <ul class="navbar-nav ms-auto"><!--a list to house all the menu links-->
+                            <li class="nav-item active"><a class="nav-link" href="index.html">HOME</a></li><!--generates home link-->
+                            <li class="nav-item"><a class="nav-link" href="industry.html">INDUSTRIES</a></li><!--generates home link-->
+                            <li class="nav-item"><a class="nav-link" href="legality.html">LEGALITY</a></li><!--generates legality link-->
+                            <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li><!--generates about link-->
+                            <li class="nav-item"><a class="nav-link" href="vision.html">VISION</a></li><!--generates about link-->
+                            <li class="nav-item"><a class="nav-link" href="contact-us.html">CONTACT</a></li><!--generates contact us link link-->
+                        </ul>
+                    </div>
+                </nav>
+            </div>    
+        </section>
+        <section id="img_ban">
+            <div class="text-center d-flex justify-content-center align-items-center col-12 mt-5">
+                <div class="container">
+                    <img src="img/bg_image01.jpeg" class="img-fluid"/>
+                    <div id="center-text" class="col-12 px-1"><h1>Smart Global Drones</h1></div>
+                </div>
+            </div>  
+        </section>
+        <section id="txt_ban_1">
+            <div class="container-fluid my-auto">
+                <div class="row justify-content-center align-items-center" id="fadethis">
+                    <h2 class="mt-4 mb-1">Smart Drone Manufacturing</h2>
+                    <div class="container-fluid d-lg-flex align-items-lg-start my-3">
+                        <div class="col-lg-3 mx-auto mb-2">
+                            <p>
+                                Our aim is to use drones to enable Smart City capabilities. Drones offer an opportunity for better connectivity, efficiency and ingenuity. For example, alerts from IoT sensors could inform drones that medical supplies are needed at a specific location, wherein the drone(s) could pick up and deliver the supplies at the intended location. They offer unique traffic and crowd management solutions as they can move about freely and be allocated easily with minimal infrastructure. Drones could also offer back-up surveillance in areas with poor CCTV coverage or areas where personnel or typical surveillance equipment could not go.
+                            </p>
+                        </div>
+                        <div class="col-lg-3 mx-auto mb-2">
+                            <p>
+                                Drones are a relatively new technology despite having been in development since the mid 20th century. They have the potential to be incredibly useful pieces of technology and improve facets of society and industry. They are, however, not without their drawbacks as many current laws strictly control the use of drones commercially. The youth of the technology means it has the potential to be used in many ways in the future but this may require further development of other technologies, such as communication infrastructure, first.  
+                            </p>
+                        </div>
+                        <div class="col-lg-3 mx-auto mb-2">
+                            <p>
+                                Our other project involves creating a city wide wireless network which allows all citizens to connect to one another and more freely interact with the city. This infrastructure would enable the use of drones to carry out city functions as mentioned previously.
+                                <br>
+                                <br>
+                                <img src="img/banner_img.png"/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="img_ban">
+            <div class="text-center d-flex justify-content-center align-items-center col-12">
+                <div class="container">
+                    <img src="img/bg_image04.jpeg" class="img-fluid"/>
+                </div>
+            </div> 
+        </section>
+        <section  id="txt_ban_2">
+            <div class="container-fluid my-auto">
+                <div class="row justify-content-center align-items-center">
+                    <div class="container-fluid d-lg-flex align-items-lg-start my-3">
+                        <div class="col-lg-3 mx-auto my-4">
+                            <h3>Uses of Drones</h3>
+                            <p>
+                                Drones can be used in many industries and for many roles within them. The range of technology drones possess and can be paired with is vast, causing drones to be very versatile devices.
+                                <br>
+                                <br>
+                                To find out more about each industry drones are being used in, click the links below:
+                                <br>
+
+                                <!-- <ul class="hlist">
+                                    <li><a href="agriculture.html">Agriculture</a></li>
+                                    <li><a href="construction.html">Construction</a></li>
+                                    <li><a href="military.html">Military</a></li>
+                                </ul> -->
+                            </p>
+                        </div>
+                        <div class="col-lg-3 mx-auto my-4">
+                            <h3>The Future of Drones</h3>
+                            <p>
+                                Drones have much potential and can be adpated for many uses. The technology surrounding traversal, visual detection, mapping, stabilisation and networking offer some very interesting solutions to modern problems. Drones can be fitted with all sorts of things to enhance their operations, be it mapping terrain, managing traffic or delivering items across small distances.
+                                <br>
+                                <br>
+                                To find out more about our vision for drones, click <a href="vision.html">here</a>
+                            </p>
+                        </div>
+                        <div class="col-lg-3 mx-auto my-4">
+                            <h3>Basic Drone Laws</h3>
+                            <p>
+                                Drone laws differ from country to country. Before using drones be sure to check with your national aviation organisation. In the UK drones are prohibited from flying outside direct line of site of the operator, flying higher than 122m and flying within 50m of any person or property.
+                                <br>
+                                <br>
+                                For more information click <a href="legality.html">here</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <!-- Section: Footer  -->
+            <section class="my-auto" id="main_footer">
+                <div class="container text-center text-md-start my-auto">
+                <!-- Grid row -->
+                    <div class="row mt-auto mb-4">
+                    <!-- Grid column -->
+                        <div class="col-md-5 col-lg-4 col-xl-3 mx-auto mb-md-0 my-4">
+                        <!-- Content -->
+                        <img class="img-fluid"src="img/sgdlogo.png" id="footer_logo"/>
+                        <p>
+                            <br>
+                            SGD is a global company, with offices in New York, San Francisco, London, Istanbul and Bangkok.
+                            <br>
+                            <br>
+                            Our North American presence is in New York and San Francisco.
+                            <br>
+                            <br>
+                            Our Middle East office is located in Istanbul, Turkey
+                            <br>
+                            <br>
+                            Our APAC presence is in Bangkok, Thailand
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+        
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 my-4">
+                        <!-- Links -->
+                        <!-- <h6 class="text-uppercase fw-bold">Resources</h6> -->
+                        <h6 class="text-uppercase fw-bold">Coming Soon</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"/>
+                        <p>
+                            <a href="#!" class="disabled">Smart Cities</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="disabled">Privacy Policy</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="disabled">Whitepaper</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="disabled">Pricing and Products</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+        
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 my-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold">Navigation</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"/>
+                        <p>
+                            <a href="index.html" >Home</a>
+                        </p>
+                        <p>
+                            <a href="industry.html">Industries</a>
+                        </p>
+                        <p>
+                            <a href="legality.html">Legality</a>
+                        </p>
+                        <p>
+                            <a href="about.html">About Us</a>
+                        </p>
+                        <p>
+                            <a href="vision.html">Vision</a>
+                        </p>
+                        <p>
+                            <a href="contact-us" class="active">Contact Us</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+        
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-3 col-xl-3 mx-auto mb-md-0 my-4">
+                        <!-- <h6 class="text-uppercase fw-bold">Follow Us</h6> -->
+                        <h6 class="text-uppercase fw-bold">Coming Soon</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"/>
+                        <table class="mx-auto mx-lg-0">
+                            <tr>
+                            <td><a href="#" class="disabled"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a></td>
+                            <td><a href="#" class="disabled"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a></td>
+                            <td><a href="#" class="disabled"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+                        </tr></td>
+                        </table>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+                </div>
+                <!-- Section: Links  -->
+                <!-- Copyright -->
+                <div class="text-center py-2">
+                    <p>© 2020 Copyright: SGD Ltd.</p>
+                <!-- Copyright -->
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>
